@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeColor">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/activity_margin_left_right"
+        android:layout_marginLeft="@dimen/activity_margin_left_right">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:text="Enter Your Code"
+            android:fontFamily="@font/bold"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColorHint="#FFF"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/authentication_verification_edittext_code"
+            android:hint="Code"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Verify"
+            android:id="@+id/authentication_verification_verify_button"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/semibold"
+            android:textAllCaps="false"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Resend"
+            android:id="@+id/authentication_verification_resend_button"
+            android:background="@drawable/login_with_facebook_button"
+            android:fontFamily="@font/semibold"
+            android:textAllCaps="false"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

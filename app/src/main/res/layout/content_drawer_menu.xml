@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityMenu.DrawerMenuActivity"
+    tools:showIn="@layout/activity_drawer_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <!-- profile -->
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                app:civ_shadow="true"
+                android:id="@+id/activity_menu_profile_picture"
+                app:civ_shadow_gravity="center"
+                app:civ_shadow_radius="5"
+                android:layout_centerVertical="true"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/activity_menu_username"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/semibold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="Milan Shrestha"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:focusable="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/activity_menu_level"
+                    android:focusedByDefault="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/regular"
+                    android:layout_marginRight="10dp"
+                    android:text="Level 25"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="26dp"-->
+            <!--android:layout_marginRight="26dp"-->
+            <!--android:background="@color/backgroundLightGrayColor"></LinearLayout>-->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="@font/semibold"
+            android:id="@+id/activity_menu_item_all_category"
+            android:layout_gravity="center_vertical"
+            android:text="All Category"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/activity_menu_item_profile"
+            android:textColor="#FFF"
+            android:padding="10dp"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="@font/regular"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="Profile"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:padding="10dp"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/activity_menu_item_feedback"
+            android:text="Feedback"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="26dp"
+            android:padding="10dp"
+            android:fontFamily="@font/semibold"
+            android:id="@+id/activity_menu_item_message_us"
+            android:layout_gravity="center_vertical"
+            android:text="Message us"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/activity_menu_item_change_password"
+            android:text="Change Password"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="26dp"
+            android:padding="10dp"
+            android:fontFamily="@font/semibold"
+            android:id="@+id/activity_menu_item_developer_details"
+            android:layout_gravity="center_vertical"
+            android:text="Developer details"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="26dp"
+            android:padding="10dp"
+            android:fontFamily="@font/semibold"
+            android:id="@+id/activity_menu_item_logout"
+            android:layout_gravity="center_vertical"
+            android:text="Logout"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

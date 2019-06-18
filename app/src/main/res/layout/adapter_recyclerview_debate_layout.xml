@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- profile -->
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile"
+                app:civ_shadow="true"
+                android:id="@+id/adapter_debate_item_team_a_profile_pic"
+                android:layout_alignParentLeft="true"
+                app:civ_shadow_gravity="center"
+                app:civ_shadow_radius="5"
+                app:civ_border_color="@color/themeBlueColor"
+                android:layout_centerVertical="true"
+                app:civ_border_width="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/bold"
+                android:id="@+id/adapter_debate_item_time"
+                android:textColor="@color/brickColor"
+                android:text="17 min ago"
+                android:textSize="14dp" />
+
+            <!-- profile image -->
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile"
+                app:civ_shadow="true"
+                android:id="@+id/adapter_debate_item_team_b_profile_pic"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:civ_shadow_gravity="center"
+                app:civ_shadow_radius="5"
+                app:civ_border_color="@color/brickColor"
+                app:civ_border_width="3dp"/>
+
+
+        </RelativeLayout>
+
+        <!-- title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:id="@+id/adapter_debate_item_title"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/themeColor"
+            android:text="#Messi vs Ronald in champion
+leage better than good."
+            android:textSize="22dp" />
+
+        <!-- two team sides -->
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- left new team layout -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:text="Messi Fans"
+                    android:id="@+id/adapter_debate_item_team_a_name"
+                    android:textSize="14dp"/>
+
+                <RelativeLayout
+                    android:elevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/my_team_circle_layout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/bold"
+                        android:textColor="#FFF"
+                        android:id="@+id/adapter_debate_item_team_a_score"
+                        android:text="90%"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- middle -->
+            </LinearLayout>
+
+            <!-- right oppenient team layout -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:id="@+id/adapter_debate_item_team_b_name"
+                    android:text="Messi Fans"
+                    android:textSize="14dp"/>
+
+                <RelativeLayout
+                    android:elevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opp_team_circle_layout"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/bold"
+                        android:textColor="#FFF"
+                        android:id="@+id/adapter_debate_item_team_b_score"
+                        android:text="90%"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/themeColor"
+            android:text="Live Score"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

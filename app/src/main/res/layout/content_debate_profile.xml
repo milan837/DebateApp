@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityDebateProfile.DebateProfileActivity"
+    tools:showIn="@layout/activity_debate_profile"
+    android:background="@color/backgroundLightGrayColor">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@color/themeColor"
+        android:id="@+id/activity_debate_profile_tablayout"
+        app:tabSelectedTextColor="#FFF"
+        app:tabTextColor="#EEE"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabIndicatorColor="#FFF">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLightGrayColor"
+        android:id="@+id/activity_debate_profile_viewpager">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

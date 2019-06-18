@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityCreateDebate.CreateDebateActivity"
+    tools:showIn="@layout/activity_create_debate">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/new_edit_text"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/themeColor"
+                android:hint="Debate Title"
+                android:textSize="14dp"
+                android:id="@+id/activity_create_new_debate_edittext_title"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/capsule_edittext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/themeColor"
+                android:hint="Hash tags"
+                android:textSize="14dp"
+                android:id="@+id/activity_create_new_debate_edittext_hashtag"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/capsule_edittext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/themeColor"
+                android:hint="Your team name"
+                android:textSize="14dp"
+                android:id="@+id/activity_create_new_debate_edittext_team_a_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/capsule_edittext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/semibold"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/themeColor"
+                android:hint="Oppenient team name"
+                android:textSize="14dp"
+                android:id="@+id/activity_create_new_debate_edittext_team_b_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="22dp"
+                android:text="Challange To"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/themeColor"
+                android:fontFamily="@font/bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/capsule_edittext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:fontFamily="@font/semibold"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/themeColor"
+                android:hint="Oppenient team name"
+                android:textSize="14dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/activity_create_new_debate_edittext_team_b_challanger_name"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/activity_create_new_debate_button_create"
+        android:background="@color/themeColor"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:text="Create New Debate"
+        android:textSize="16dp"
+        android:fontFamily="@font/semibold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       />
+
+</RelativeLayout>

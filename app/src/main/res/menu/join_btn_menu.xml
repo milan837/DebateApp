@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/join_btn_team_a"
+        android:title="Team A"/>
+
+    <item
+        android:id="@+id/join_btn_team_b"
+        android:title="Team B"/>
+
+</menu>

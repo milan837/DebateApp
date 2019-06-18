@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <!-- profile -->
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                app:civ_shadow="true"
+                android:id="@+id/adapter_recyclerview_user_details_profile_picture"
+                app:civ_shadow_gravity="center"
+                app:civ_shadow_radius="5"
+                android:layout_centerVertical="true"
+                app:civ_border_width="0dp"/>
+
+            <!-- badges section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:text="Badges"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:text="344"
+                    android:id="@+id/adapter_recyclerview_user_details_badges"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+
+            <!-- badges section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:text="Levels"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/themeColor"
+                    android:text="25"
+                    android:id="@+id/adapter_recyclerview_user_details_levels"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- name section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/themeColor"
+                    android:text="Milan Shrestha"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/adapter_recyclerview_user_details_username"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/themeColor"
+                    android:text="Total no of debate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/my_team_circle_layout"
+                android:elevation="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/bold"
+                    android:textColor="#FFF"
+                    android:text="25"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/adapter_recyclerview_user_details_total_debate"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!-- button -->
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_button"
+            android:id="@+id/adapter_recyclerview_user_details_button_add"
+            android:textColor="#FFF"
+            android:fontFamily="@font/semibold"
+            android:textSize="16dp"
+            android:layout_marginBottom="7dp"
+            android:textAllCaps="false"
+            android:text="Add to squard"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bold"
+            android:textColor="#000"
+            android:text="0"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/adapter_recyclerview_user_details_button_status"
+            android:textSize="14dp"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

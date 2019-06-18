@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Debate</string>
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="facebook_app_id">248749745835241</string>
+    <string name="title_activity_create_debate">CreateDebateActivity</string>
+    <string name="title_activity_category_base_debate_list">CategoryBaseDebateListActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_drawer_menu">DrawerMenuActivity</string>
+    <string name="title_activity_debate_profile">DebateProfileActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_all_category">AllCategoryActivity</string>
+    <string name="title_activity_more_option">MoreOptionActivity</string>
+    <string name="title_activity_sub_category">SubCategoryActivity</string>
+    <string name="title_activity_change_password">ChangePasswordAct</string>
+    <string name="title_activity_chat_box">ChatBoxActivity</string>
+    <string name="title_activity_chat_box_image_view"></string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_update_user_details">UpdateUserDetailsActivity</string>
+</resources>

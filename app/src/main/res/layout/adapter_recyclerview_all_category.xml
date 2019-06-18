@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:background="#FFF"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/themeColor"
+            android:text="Football"
+            android:id="@+id/adapter_recyclerview_all_category_title"
+            android:textSize="20dp"/>
+
+        <!-- total hash tags -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/themeColor"
+            android:layout_gravity="center_vertical"
+            android:text="Total hash tags "
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/themeColor"
+            android:text="50"
+            android:id="@+id/adapter_recyclerview_all_category_hasttag"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+        <!-- total Sub Category -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/themeColor"
+            android:layout_gravity="center_vertical"
+            android:text="Sub Category"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/themeColor"
+            android:layout_marginLeft="34dp"
+            android:text="60"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+        <!-- total active debate div -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/themeColor"
+                android:layout_gravity="center_vertical"
+                android:text="Total Active Debate"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/semibold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/themeColor"
+                android:text="60"
+                android:id="@+id/adapter_recyclerview_all_category_active_debate"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

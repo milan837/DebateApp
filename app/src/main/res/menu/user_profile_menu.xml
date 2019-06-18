@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/user_profile_update_uname"
+        android:title="Change Username" />
+
+    <item
+        android:id="@+id/user_profile_update_pp"
+        android:title="Change Profile Picture" />
+
+</menu>

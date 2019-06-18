@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/themeColor">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragment_update_back_button"
+        android:src="@drawable/ic_arrow_back_white_50dp"/>
+
+    <TextView
+        android:layout_below="@+id/fragment_update_back_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose new profile picture"
+        android:fontFamily="@font/semibold"
+        android:textColor="#FFF"
+        android:textSize="30dp"/>
+
+    <!-- logo -->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:id="@+id/fragment_update_profile_picture"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="@color/themeColor"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/fragment_upload_profile_picture_button"
+        android:background="@color/brickColor"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:text="Change"
+        android:textSize="16dp"
+        android:elevation="50dp"
+        android:fontFamily="@font/semibold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>

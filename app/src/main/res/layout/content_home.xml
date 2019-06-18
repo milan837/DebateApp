@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityHome.HomeActivity"
+    tools:showIn="@layout/activity_home"
+    android:background="@color/backgroundLightGrayColor">
+
+    <!--/////////////////////////////////////// top debate section //////////////////////////////-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_home_textview_top_debate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/semibold"
+                android:text="Top Debates"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_home_see_all_top_debate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/FlatButton"
+                android:background="@color/backgroundLightGrayColor"
+                android:text="See All >"
+                android:textAllCaps="false"
+                android:textColor="@color/brickColor"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp">
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/activity_home_recyclerview_top_debate">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/activity_home_progressbar_top_debate"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--/////////////////////////////////////// Socials section //////////////////////////////-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_home_textview_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/semibold"
+                android:text="Socials"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_home_see_all_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundLightGrayColor"
+                android:text="See All >"
+                android:textAllCaps="false"
+                style="@style/FlatButton"
+                android:textColor="@color/brickColor"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp">
+
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:minHeight="150dp"
+                android:id="@+id/activity_home_recyclerview_social">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/activity_home_progressbar_social"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--/////////////////////////////////////// Sports section //////////////////////////////-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_home_textview_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/semibold"
+                android:text="Sports"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_home_see_all_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/FlatButton"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundLightGrayColor"
+                android:text="See All >"
+                android:textAllCaps="false"
+                android:textColor="@color/brickColor"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp">
+
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:minHeight="150dp"
+                android:id="@+id/activity_home_recyclerview_sports">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/activity_home_progressbar_sports"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--/////////////////////////////////////// politecs section //////////////////////////////-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_home_textview_politices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/semibold"
+                android:text="Politices"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_home_see_all_politices"
+                android:layout_width="wrap_content"
+                style="@style/FlatButton"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundLightGrayColor"
+                android:text="See All >"
+                android:textAllCaps="false"
+                android:textColor="@color/brickColor"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp">
+
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/activity_home_recyclerview_politices">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <ProgressBar
+                android:id="@+id/activity_home_progressbar_politices"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--///////////////////////////////////////  News section //////////////////////////////-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_home_textview_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/semibold"
+                android:text="News"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_home_see_all_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundLightGrayColor"
+                android:text="See All >"
+                android:textAllCaps="false"
+                style="@style/FlatButton"
+                android:textColor="@color/brickColor"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp">
+
+            <!-- recycler view -->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:minHeight="150dp"
+                android:id="@+id/activity_home_recyclerview_news">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/activity_home_progressbar_news"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

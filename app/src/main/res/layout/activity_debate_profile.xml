@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDebateProfile.DebateProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsing_tool_bar_layout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:fitsSystemWindows="true">
+
+            <!-- collasping div -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/semibold"
+                    android:id="@+id/activity_debate_profile_textview_title"
+                    android:textColor="#FFF"
+                    android:text="#Messi vs Ronaldo champitons leages final best playeres"
+                    android:textSize="20dp"
+                    app:layout_collapseMode="parallax"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <!-- team a users -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/semibold"
+                            android:textColor="#FFF"
+                            android:text="Team A"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/semibold"
+                            android:id="@+id/activity_debate_profile_textview_team_a_name"
+                            android:textColor="#FFF"
+                            android:text="Messi Guys"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/semibold"
+                            android:id="@+id/activity_debate_profile_textview_team_a_total_member"
+                            android:textColor="#FFF"
+                            android:text="Users 50"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <!-- team b users -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/bold"
+                            android:textColor="#FFF"
+                            android:text="Team B"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/semibold"
+                            android:id="@+id/activity_debate_profile_textview_team_b_name"
+                            android:textColor="#FFF"
+                            android:text="Messi Guys"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/semibold"
+                            android:id="@+id/activity_debate_profile_textview_team_b_total_member"
+                            android:textColor="#FFF"
+                            android:text="Users 50"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    app:layout_collapseMode="parallax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/semibold"
+                    android:id="@+id/activity_debate_profile_textview_start_time"
+                    android:textColor="#FFF"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="7:56 AM "
+                    android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:elevation="5dp"
+                        android:id="@+id/activity_debate_profile_button_join_debate"
+                        android:background="@drawable/join_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/semibold"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#FFF"
+                            android:text="Join Debate"
+                            android:id="@+id/activity_debate_profile_textview_join_debate"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- toolbar -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin">
+
+                <!-- toolbar content -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/activity_debate_profile_back_btn"
+                        android:src="@drawable/ic_arrow_back_white_50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/semibold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="Debate"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_debate_profile" />
+
+
+</android.support.design.widget.CoordinatorLayout>
